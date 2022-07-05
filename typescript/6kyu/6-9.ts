@@ -17,3 +17,8 @@ export const findOdd = (xs: number[]): number => {
 
   return foo[0][0];
 };
+
+// best solution
+// export const findOdd = (xs: number[]): number => {
+//   return xs.reduce( (a,b)=> a^b);
+// };

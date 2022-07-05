@@ -22,3 +22,8 @@ export const findOdd = (xs: number[]): number => {
 // export const findOdd = (xs: number[]): number => {
 //   return xs.reduce( (a,b)=> a^b);
 // };
+
+// 所感
+// best solutionのやつは流石に思いつかん、、
+// JSの^オペランド知らなかったから勉強になった
+// けど、まだいまいち使い方わかってない、、

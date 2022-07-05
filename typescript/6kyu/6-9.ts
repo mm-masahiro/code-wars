@@ -2,10 +2,18 @@
 // my solution
 
 export const findOdd = (xs: number[]): number => {
-	//   数値を1つずつarrayに入れていって、ダブりが出てきたらその要素をarrayから削除する
-	//   最後残ったものをreturnする
-		if (xs.length === 1) return xs[0]
-		
-		return 0;
-	};
-	
+  if (xs.length === 1) return xs[0]
+  
+  const nums: number[] = []
+  const foo = xs.map((num) => {
+    const duplicateNumIndex = nums.indexOf(num)
+    if (duplicateNumIndex === -1) {
+      nums.push(num)
+    } else {
+      nums.splice(duplicateNumIndex, 1)
+    }
+    return nums
+  });
+
+  return foo[0][0];
+};

@@ -25,3 +25,7 @@ export function beeramid(bonus: number, price: number): number {
   }
   return level
 }
+
+// 所感
+// while使おうと思ってやめた
+// もう少しちゃんと考えれば行けた問題だった

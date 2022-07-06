@@ -7,3 +7,6 @@ export function toBase64(str: string): string {
 export function fromBase64(str: string): string {
   return Buffer.from(str, 'base64').toString()
 }
+
+// 所感
+// bestに近い回答だった

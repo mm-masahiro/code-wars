@@ -6,3 +6,8 @@ function buildArray(nums: number[]): number[] {
 	});
 	return sortedNums
 };
+
+// best
+// function buildArray(nums: number[]): number[] {
+// 	return nums.map((num) => nums[num])
+// };

@@ -10,3 +10,8 @@ function getMinDistance(nums: number[], target: number, start: number): number {
 	}
 	return Math.abs(targetIndex[0] - start);
 };
+
+// good code 
+// function getMinDistance(nums: number[], target: number, start: number): number {
+// 	return nums.reduce((min, num, i) => num === target ? Math.min(min, Math.abs(start - i)) : min, Infinity);
+// };

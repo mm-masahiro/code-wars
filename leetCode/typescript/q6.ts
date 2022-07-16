@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/root-equals-sum-of-children/
+// my code
+
+
 class TreeNode {
 	val: number
 	left: TreeNode | null
@@ -18,3 +22,9 @@ function checkTree(root: TreeNode | null): boolean {
 	if (rootNode === sum) return true
 	return false
 };
+
+// best code
+// function checkTree(root: TreeNode | null): boolean {
+// 	return root.val === root?.left?.val + root?.right?.val
+// };
+

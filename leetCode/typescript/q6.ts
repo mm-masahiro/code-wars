@@ -9,7 +9,9 @@ class TreeNode {
 	}
 }
 
- function checkTree(root: TreeNode | null): boolean {
+function checkTree(root: TreeNode | null): boolean {
+	if (!root) return false;
+	if (!root.left || !root.right) return false;
 	const rootNode = root.val
 	const sum = root.left.val + root.right.val
 

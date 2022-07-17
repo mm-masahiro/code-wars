@@ -4,3 +4,9 @@ function defangIPaddr(address: string): string {
 	const regex = /\./g;
 	return address.replace(regex, "[.]");
 };
+
+// best code
+// function defangIPaddr(address: string): string {
+// 	return address.split('.').join('[.]')
+//  };
+ 

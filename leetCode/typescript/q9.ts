@@ -7,3 +7,20 @@ function twoSum(nums: number[], target: number): number[] {
 	result.push(returnIndex, returnIndex + 1);
 	return result  
 };
+
+// best
+// const twoSum = (nums, target) => {
+//   const map = {};
+
+//   for (let i = 0; i < nums.length; i++) {
+//     const another = target - nums[i];
+
+//     if (another in map) {
+//       return [map[another], i];
+//     }
+
+//     map[nums[i]] = i;
+//   }
+
+//   return null;
+// };

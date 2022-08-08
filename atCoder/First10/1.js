@@ -1,4 +1,3 @@
-// const input = require("fs").readFileSync("/dev/stdin", "utf8").trim().split("\n");
 const input = require("fs").readFileSync("/dev/stdin", "utf8").split("\n");
 
 const result = (a, b) => {

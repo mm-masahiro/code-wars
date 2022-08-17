@@ -5,7 +5,7 @@ function isValid(s: string): boolean {
 		'[': ']',
 		'{': '}',
 	}
-	const parentheses = [];
+	const parentheses: string[] = [];
 	
 	if (devidedStrings.length === 1) return false
 	
@@ -15,7 +15,7 @@ function isValid(s: string): boolean {
 		};
 		if (devidedStrings[i] === ')' || devidedStrings[i] === ']' || devidedStrings[i] === '}') {
 			const poppedString = parentheses.pop()
-			if (parenthesesPairs[poppedString] !== devidedStrings[i]) return false
+			if (poppedString && parenthesesPairs[poppedString] !== devidedStrings[i]) return false
 		}
 	}
 	

@@ -13,6 +13,7 @@ function isValid(s: string): boolean {
 		if (devidedStrings[i] === '(' || devidedStrings[i] === '[' || devidedStrings[i] === '{') {
 			parentheses.push(devidedStrings[i])
 		};
+
 		if (devidedStrings[i] === ')' || devidedStrings[i] === ']' || devidedStrings[i] === '}') {
 			const poppedString = parentheses.pop()
 			if (poppedString && parenthesesPairs[poppedString] !== devidedStrings[i]) return false

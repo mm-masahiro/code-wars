@@ -31,3 +31,15 @@ class KthLargest {
 * var param_1 = obj.add(val)
 */
 
+
+const heapSort = (arr: number[]) => {
+	const [leftChildIndex, rightChildIndex] = getTreeChildren(0)
+	console.log(leftChildIndex);
+	console.log(rightChildIndex)
+}
+
+const getTreeChildren = (index: number) => {
+	return [index * 2 + 1, index * 2 + 2];
+}
+
+console.log(heapSort([4, 5, 8, 2]));

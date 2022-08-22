@@ -34,12 +34,15 @@ class KthLargest {
 
 const heapSort = (arr: number[]) => {
 	const [leftChildIndex, rightChildIndex] = getTreeChildren(0)
-	console.log(leftChildIndex);
-	console.log(rightChildIndex)
-}
+};
+
+const swap = (arr: number[], parentNodeIndex: number, ChildNodeIndex: number) => {
+	return [arr[parentNodeIndex], arr[ChildNodeIndex]] = [arr[ChildNodeIndex], arr[parentNodeIndex]];
+};
 
 const getTreeChildren = (index: number) => {
 	return [index * 2 + 1, index * 2 + 2];
-}
+};
 
-console.log(heapSort([4, 5, 8, 2]));
+// arrに値を追加していって、親ノードの値より大きければ入れ替える
+heapSort([4, 5, 8, 2]);

@@ -25,11 +25,16 @@ var KthLargest = /** @class */ (function () {
 * var param_1 = obj.add(val)
 */
 var heapSort = function (arr) {
-    var _a = getTreeChildren(0), leftChildIndex = _a[0], rightChildIndex = _a[1];
-    console.log(leftChildIndex);
-    console.log(rightChildIndex);
+    // const [leftChildIndex, rightChildIndex] = getTreeChildren(0)
+    console.log(swap(arr, 0, 1));
+    console.log(arr);
+};
+var swap = function (arr, parentNodeIndex, ChildNodeIndex) {
+    var _a;
+    return _a = [arr[ChildNodeIndex], arr[parentNodeIndex]], arr[parentNodeIndex] = _a[0], arr[ChildNodeIndex] = _a[1], _a;
 };
 var getTreeChildren = function (index) {
     return [index * 2 + 1, index * 2 + 2];
 };
-console.log(heapSort([4, 5, 8, 2]));
+// arrに値を追加していって、親ノードの値より大きければ入れ替える
+heapSort([4, 5, 8, 2]);

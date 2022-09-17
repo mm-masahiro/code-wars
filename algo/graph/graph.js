@@ -1,3 +1,6 @@
+"use strict";
+exports.__esModule = true;
+exports.graph = exports.Graph = void 0;
 var Graph = /** @class */ (function () {
     function Graph() {
         this.adjacencyList = {};
@@ -15,18 +18,29 @@ var Graph = /** @class */ (function () {
     };
     return Graph;
 }());
-var graph = new Graph();
-graph.addNode("A");
-graph.addNode("B");
-graph.addNode("C");
-graph.addNode("D");
-graph.addNode("E");
-graph.addNode("F");
-graph.addEdge("A", "B");
-graph.addEdge("A", "C");
-graph.addEdge("B", "D");
-graph.addEdge("C", "E");
-graph.addEdge("D", "E");
-graph.addEdge("D", "F");
-graph.addEdge("E", "F");
-console.log(graph);
+exports.Graph = Graph;
+exports.graph = new Graph();
+exports.graph.addNode("A");
+exports.graph.addNode("B");
+exports.graph.addNode("C");
+exports.graph.addNode("D");
+exports.graph.addNode("E");
+exports.graph.addNode("F");
+exports.graph.addEdge("A", "B");
+exports.graph.addEdge("A", "C");
+exports.graph.addEdge("B", "D");
+exports.graph.addEdge("C", "E");
+exports.graph.addEdge("D", "E");
+exports.graph.addEdge("D", "F");
+exports.graph.addEdge("E", "F");
+console.log(exports.graph);
+// Graph image
+//          A
+//        /   \
+//       B     C
+//       |     |
+//       D --- E
+//        \   /
+//          F
+// DFSの走査順: A=>C=>E=>F=>D=>B
+// BFSの走査順: A=>B=>C=>D=>E=>F

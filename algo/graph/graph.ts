@@ -1,4 +1,4 @@
-class Graph {
+export class Graph {
 	adjacencyList: {};
 
 	// nodeを追加するメソッド
@@ -17,7 +17,7 @@ class Graph {
 	}
 }
 
-let graph = new Graph();
+export let graph = new Graph();
 
 graph.addNode("A")
 graph.addNode("B")

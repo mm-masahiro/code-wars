@@ -35,3 +35,16 @@ graph.addEdge("D", "F");
 graph.addEdge("E", "F");
 
 console.log(graph);
+
+// Graph image
+
+//          A
+//        /   \
+//       B     C
+//       |     |
+//       D --- E
+//        \   /
+//          F
+
+// DFSの走査順: A=>C=>E=>F=>D=>B
+// BFSの走査順: A=>B=>C=>D=>E=>F

@@ -33,7 +33,7 @@ exports.graph.addEdge("C", "E");
 exports.graph.addEdge("D", "E");
 exports.graph.addEdge("D", "F");
 exports.graph.addEdge("E", "F");
-console.log(exports.graph);
+// console.log(graph);
 // Graph image
 //          A
 //        /   \

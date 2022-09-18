@@ -34,7 +34,7 @@ graph.addEdge("D", "E");
 graph.addEdge("D", "F");
 graph.addEdge("E", "F");
 
-console.log(graph);
+// console.log(graph);
 
 // Graph image
 

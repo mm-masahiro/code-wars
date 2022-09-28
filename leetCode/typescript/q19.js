@@ -15,8 +15,9 @@ function sortedArrayToBST(nums) {
     var node = new TreeNode(nums[middleNumIndex]);
     node.left = sortedArrayToBST(nums.slice(1, middleNumIndex));
     node.right = sortedArrayToBST(nums.slice(middleNumIndex + 1, nums.length));
+    console.log(node);
     return node;
 }
 ;
 var nums = [-10, -3, 0, 5, 9];
-console.log(sortedArrayToBST(nums));
+sortedArrayToBST(nums);

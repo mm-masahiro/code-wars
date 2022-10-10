@@ -2,7 +2,7 @@ import { Graph, graph } from "./graph";
 
 // グラフアルゴリズムで大事なのは一回訪れたところにはフラグをつける
 // DFS: 深さ優先。あるノードから行けるところまで行く。スタックの考え方を使う
-const dfs = (graph: Graph, start: string) => {
+const dfs = (graph: Graph, start: string): string[] => {
 	const searchRoot: string[] = [];
 	const currentNode = start;
 	const visited = {};

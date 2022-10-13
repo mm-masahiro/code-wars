@@ -18,16 +18,16 @@ const frog2 = (h: number[], k: number): number => {
 		minCosts.push(Infinity);
 	}
 
-	// for (let i = 0; i < h.length; i++) {
-	// 	for (let j = 1; j <= k; j++) {
-	// 		// [0]
-	// 		// minCosts[1], 
-	// 		if (minCosts[i + j], Math.abs(h[i] - h [i + j])) {
-				
-	// 		}
-	// 	}
-	// }
-	console.log(minCosts);
+	for (let i = 0; i < h.length; i++) {
+		for (let j = 1; j <= k; j++) {
+			min = (chmin(minCosts[i + j], minCosts[i] + Math.abs(h[i] - h[i + j])));
+
+			if (minCosts[i + j] > min) {
+				minCosts[i + j] = min
+			}
+			console.log(minCosts);
+		};
+	}
 	return Number(minCosts.slice(-1));
 };
 
@@ -40,5 +40,4 @@ const chmin = (origin: number, target: number) => {
 	return origin;
 };
 
-// console.log(frog2(h, K));
-console.log(chmin(7, 3));
+console.log(frog2(h, K));

@@ -31,4 +31,14 @@ const frog2 = (h: number[], k: number): number => {
 	return Number(minCosts.slice(-1));
 };
 
-console.log(frog2(h, K));
+const chmin = (origin: number, target: number) => {
+	// aは比較元、bがどんどんインクリメントされて新しく比較する方になる
+	// → 元のものより、小さいものが出てきたら比較元をより小さい方に入れ替える
+	if (origin > target) {
+		origin = target
+	};
+	return origin;
+};
+
+// console.log(frog2(h, K));
+console.log(chmin(7, 3));

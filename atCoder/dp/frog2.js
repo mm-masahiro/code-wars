@@ -22,4 +22,12 @@ var frog2 = function (h, k) {
     console.log(minCosts);
     return Number(minCosts.slice(-1));
 };
-console.log(frog2(h, K));
+var chmin = function (a, b) {
+    console.log(a);
+    if (a > b) {
+        a = b;
+        console.log(a);
+    }
+};
+// console.log(frog2(h, K));
+console.log(chmin(3, 7));

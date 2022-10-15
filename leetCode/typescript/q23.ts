@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/palindrome-number/submissions/
+
 function isPalindrome(x: number): boolean {
 	let num = x;
 	const nums: number[] = [];
